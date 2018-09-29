@@ -10,11 +10,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HelpComponent } from './help/help.component';
 import { ChooseComponent } from './choose/choose.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { TownComponent } from './town/town.component';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
-  {path: 'choose', component: ChooseComponent},
   {path: 'help', component: HelpComponent},
+  {path: 'choose', component: ChooseComponent},
+  {path: 'town', component: TownComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -27,7 +30,9 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     HelpComponent,
     ChooseComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    TownComponent
   ],
   imports: [
     BrowserModule,
