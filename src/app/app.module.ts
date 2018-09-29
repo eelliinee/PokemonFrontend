@@ -9,9 +9,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HelpComponent } from './help/help.component';
 import { ChooseComponent } from './choose/choose.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
+  {path: 'choose', component: ChooseComponent},
+  {path: 'help', component: HelpComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -23,7 +26,8 @@ const appRoutes: Routes = [
     WelcomeComponent,
     PageNotFoundComponent,
     HelpComponent,
-    ChooseComponent
+    ChooseComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

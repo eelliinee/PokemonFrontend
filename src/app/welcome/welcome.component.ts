@@ -17,7 +17,7 @@ export class WelcomeComponent implements OnInit {
     alert("startGame()");
     this.saveNames(); 
     alert("link");
-    this._router.navigate(['blah']);
+    this._router.navigate(['choose']);
 
   }
 
