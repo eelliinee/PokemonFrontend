@@ -12,12 +12,14 @@ import { ChooseComponent } from './choose/choose.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TownComponent } from './town/town.component';
+import { RivalBattleComponent } from './rival-battle/rival-battle.component';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'help', component: HelpComponent},
   {path: 'choose', component: ChooseComponent},
   {path: 'town', component: TownComponent},
+  {path: 'rival-battle', component: RivalBattleComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     ChooseComponent,
     HeaderComponent,
     FooterComponent,
-    TownComponent
+    TownComponent,
+    RivalBattleComponent
   ],
   imports: [
     BrowserModule,
