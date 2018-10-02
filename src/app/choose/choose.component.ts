@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NamesService } from '../names.service';
 
 @Component({
   selector: 'app-choose',
   templateUrl: './choose.component.html',
-  styleUrls: ['./choose.component.css']
+  styleUrls: ['./choose.component.css'],
 })
 export class ChooseComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  constructor(private _router: Router, private namesService : NamesService) { }
 
   ngOnInit() {
+  }
+
+  checkNames() {
+    alert(this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
   }
 
   chooseCharmander() {

@@ -13,6 +13,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TownComponent } from './town/town.component';
 import { RivalBattleComponent } from './rival-battle/rival-battle.component';
+import { TestComponent } from './test/test.component';
+import { PokecenterComponent } from './pokecenter/pokecenter.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
+
+import {  NamesService } from './names.service';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -20,6 +26,9 @@ const appRoutes: Routes = [
   {path: 'choose', component: ChooseComponent},
   {path: 'town', component: TownComponent},
   {path: 'rival-battle', component: RivalBattleComponent},
+  {path: 'pokedex', component: PokedexComponent},
+  {path: 'pokemon', component: PokemonComponent},
+  {path: 'pokecenter', component: PokecenterComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -35,7 +44,11 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     TownComponent,
-    RivalBattleComponent
+    RivalBattleComponent,
+    TestComponent,
+    PokecenterComponent,
+    PokedexComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +59,9 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [
+    NamesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
