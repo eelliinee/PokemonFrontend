@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'pkmn';
+    src: url('assets/fonts/pkmn_rbygsc-webfont.woff2') format('woff2'),
+         url('assets/fonts/pkmn_rbygsc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'pkmn';
+}
+
 /* body {
     border: 5px solid grey;
 }
