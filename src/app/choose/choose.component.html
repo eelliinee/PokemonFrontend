@@ -4,11 +4,14 @@
   <p>If this is your first POKéMON, go to <a href="../help/" target="blank">help</a>.</p>
 </div>
 
-<div id="chosePokemonWrapper">  
+<div id="PokemonSelector">  
   <div id="chosenPokemonIcon"></div>
   <input type="radio" name="chosenPokemon" value="charmander" (click)="chooseCharmander()" id="chooseCharmander">
+  <label class="pokeballLabel" id="charmanderLabel" for="chooseCharmander"></label>
   <input type="radio" name="chosenPokemon" value="squirtle" (click)="chooseSquirtle()" id="chooseSquirtle">
+  <label class="pokeballLabel" id="squirtleLabel" for="chooseSquirtle"></label>
   <input type="radio" name="chosenPokemon" value="bulbasaur" (click)="chooseBulbasaur()" id="chooseBulbasaur">
+  <label class="pokeballLabel" id="bulbasaurLabel" for="chooseBulbasaur"></label>
   <div id="chosenPokemonText"></div>
   <input type="button" value="Yes, let's play!" (click)="commitchoice()">
 </div>
