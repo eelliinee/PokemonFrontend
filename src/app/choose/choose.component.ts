@@ -18,26 +18,26 @@ export class ChooseComponent implements OnInit {
   }
 
   checkNames() {
-    alert(this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
+    //alert(this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
   }
 
   chooseCharmander() {
-    alert("chose charmander");
+    //alert("chose charmander");
     this.displayChosenPokemon("charmander");
   }
 
   chooseSquirtle() {
-    alert("chose squirtle");
+    //alert("chose squirtle");
     this.displayChosenPokemon("squirtle");
   }
 
   chooseBulbasaur() {
-    alert("chose bulbasaur");
+    //alert("chose bulbasaur");
     this.displayChosenPokemon("bulbasaur");
   }
 
   displayChosenPokemon(pokemon) {
-    alert("display chosen pokemon "+pokemon);
+    //alert("display chosen pokemon "+pokemon);
     document.getElementById("chosenPokemonText").innerHTML = pokemon;
   }
 

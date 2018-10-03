@@ -24,7 +24,7 @@ export class WelcomeComponent implements OnInit {
     // alert(this.playerName + " and " + this.rivalName);
     this.namesService.playerNameService = this.playerName;
     this.namesService.rivalNameService = this.rivalName;
-    alert("in service: " + this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
+    // alert("in service: " + this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
     
     this._router.navigate(['choose']);
 
