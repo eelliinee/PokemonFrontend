@@ -19,6 +19,7 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
 import {  NamesService } from './names.service';
+import { PokeboxComponent } from './pokebox/pokebox.component';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   {path: 'pokedex', component: PokedexComponent},
   {path: 'pokemon', component: PokemonComponent},
   {path: 'pokecenter', component: PokecenterComponent},
+  {path: 'pokebox', component: PokeboxComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -48,7 +50,8 @@ const appRoutes: Routes = [
     TestComponent,
     PokecenterComponent,
     PokedexComponent,
-    PokemonComponent
+    PokemonComponent,
+    PokeboxComponent
   ],
   imports: [
     BrowserModule,

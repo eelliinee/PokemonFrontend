@@ -11,15 +11,15 @@ export class HeaderComponent implements OnInit {
 
 
   constructor(private namesService : NamesService) { }
-  test : string = 'test';
-  playerName : string = this.namesService.playerNameService;
+  // test : string = 'test';
+  // playerName : string = this.namesService.playerNameService;
   
   ngOnInit() {
   }
 
-  check() {
-    alert(this.namesService.playerNameService);
-  }
+  // check() {
+  //   alert(this.namesService.playerNameService);
+  // }
   
   
 

@@ -1,0 +1,32 @@
+#town {
+    border: 1px solid grey;
+    width: 448px;
+    height: 384px;
+    background-image: url(../../assets/img/town.png);
+    position: relative;
+}
+
+#pokecenterIcon, #rivalBattleIcon, #pokedexIcon, #pokemonIcon {
+    display: block;
+    position: absolute;
+}
+
+#pokecenterIcon {
+    left: 128px;
+    top: 128px;
+}
+
+#rivalBattleIcon {
+    left: 256px;
+    top: 128px;
+}
+
+#pokedexIcon {
+    left: 192px;
+    top: 256px;
+}
+
+#pokemonIcon {
+    left: 320px;
+    top: 256px;
+}
