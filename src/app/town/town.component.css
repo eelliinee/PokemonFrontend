@@ -6,24 +6,29 @@
     position: relative;
 }
 
-#pokecenterIcon, #rivalBattleIcon, #pokedexIcon, #pokemonIcon {
+#pokecenterIcon, #rivalBattleIcon, #wildBattleIcon, #pokedexIcon, #pokemonIcon {
     display: block;
     position: absolute;
 }
 
 #pokecenterIcon {
     left: 128px;
-    top: 128px;
+    top: 160px;
 }
 
 #rivalBattleIcon {
     left: 256px;
-    top: 128px;
+    top: 160px;
+}
+
+#wildBattleIcon {
+    left: 32px;
+    top: 272px;
 }
 
 #pokedexIcon {
-    left: 192px;
-    top: 256px;
+    left: 240px;
+    top: 48px;
 }
 
 #pokemonIcon {

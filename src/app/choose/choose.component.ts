@@ -12,6 +12,8 @@ export class ChooseComponent implements OnInit {
 
   constructor(private _router: Router, private namesService : NamesService) { }
 
+  playerName : string = this.namesService.playerNameService;
+
   ngOnInit() {
   }
 

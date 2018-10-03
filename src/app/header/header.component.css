@@ -1,0 +1,10 @@
+#headerWrapper {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    min-height: 64px;
+    background-image: url(../../assets/img/headerImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}

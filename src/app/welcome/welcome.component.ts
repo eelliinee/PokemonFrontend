@@ -21,12 +21,11 @@ export class WelcomeComponent implements OnInit {
   startGame() {
     // alert("startGame()");
     // this.saveNames(); 
-    alert(this.playerName + " and " + this.rivalName);
+    // alert(this.playerName + " and " + this.rivalName);
     this.namesService.playerNameService = this.playerName;
     this.namesService.rivalNameService = this.rivalName;
     alert("in service: " + this.namesService.playerNameService + " and " + this.namesService.rivalNameService);
     
-    alert("link");
     this._router.navigate(['choose']);
 
   }

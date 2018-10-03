@@ -24,6 +24,10 @@
     top: 30px;
 }
 
+#healPokemonIcon:hover {
+    cursor: pointer;
+}
+
 #pokedexIcon {
     left: 190px;
     top: 95px;

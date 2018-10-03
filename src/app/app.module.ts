@@ -20,6 +20,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 
 import {  NamesService } from './names.service';
 import { PokeboxComponent } from './pokebox/pokebox.component';
+import { WildBattleComponent } from './wild-battle/wild-battle.component';
 
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
   {path: 'pokemon', component: PokemonComponent},
   {path: 'pokecenter', component: PokecenterComponent},
   {path: 'pokebox', component: PokeboxComponent},
+  {path: 'wild-battle', component: WildBattleComponent},
 
   {path: '**', component: PageNotFoundComponent}
 
@@ -51,7 +53,8 @@ const appRoutes: Routes = [
     PokecenterComponent,
     PokedexComponent,
     PokemonComponent,
-    PokeboxComponent
+    PokeboxComponent,
+    WildBattleComponent
   ],
   imports: [
     BrowserModule,
