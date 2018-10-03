@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NamesService } from '../names.service';
 
 @Component({
   selector: 'app-rival-battle',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RivalBattleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private namesService : NamesService) { }
+
+  playerName : string = this.namesService.playerNameService;
+  rivalName : string = this.namesService.rivalNameService;
 
   ngOnInit() {
   }
