@@ -13,7 +13,7 @@ export class PokecenterComponent implements OnInit {
   }
 
   healPokemon() {
-    alert("Heal Pokemon");
+    alert("Your Pokémon are fighting fit! We hope to see you again!");
   }
 
 }

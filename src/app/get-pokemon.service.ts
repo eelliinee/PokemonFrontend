@@ -97,12 +97,28 @@ export class GetPokemonService {
     xmlhttp.send();
   }
 
+  allPokemon(){
+    var xmlhttp = new XMLHttpRequest();
+    
+    xmlhttp.onreadystatechange  = () =>{
+        console.log(xmlhttp.readyState);
+        console.log(xmlhttp.responseText);
+        if(xmlhttp.readyState == 4){
+            var allPokemon = JSON.parse(xmlhttp.responseText);
+            console.log(allPokemon);
+            this.showAllSpecies(allPokemon);
+        }
+    }
+    xmlhttp.open("GET",this.baseUrl+this.pokemonUrl,true);
+    xmlhttp.send();
+  }
+
   showAllSpecies(theSpecies){      
     var x : number;          
  //   var deDiv = document.getElementById("hints");
-    var pokedexTable = document.getElementById("pokedexTable");
+    var pokeTable = document.getElementById("pokeTable");
   //  deDiv.innerHTML = "";
-    pokedexTable.innerHTML = "<tr><th>#</th><th>POKéMON</th><th>Type</th></tr>";
+    pokeTable.innerHTML = "<tr><th>#</th><th>POKéMON</th><th>Type</th></tr>";
     for(x = 0 ; x < theSpecies.length ; x++){
         
         var kleur = 'lightblue';
@@ -112,12 +128,17 @@ export class GetPokemonService {
         // deDiv.innerHTML = deDiv.innerHTML+printToevoeging;
 
         var addPrint = "<tr><td>" + theSpecies[x].id + "</td><td>" + theSpecies[x].species + "</td><td>" + theSpecies[x].type + "</td></tr>";
-        pokedexTable.innerHTML = pokedexTable.innerHTML+addPrint;
+        pokeTable.innerHTML = pokeTable.innerHTML+addPrint;
 
 
     }
 
   }
+
+
+
+
+
 
   // pokedexLezen(){
   //   var xmlhttp = new XMLHttpRequest();
