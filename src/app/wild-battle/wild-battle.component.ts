@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetPokemonService } from '../get-pokemon.service';
 
 @Component({
   selector: 'app-wild-battle',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WildBattleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private getPokemonService : GetPokemonService) { }
 
   ngOnInit() {
+  }
+
+  voegPokemonToe() {
+    this.getPokemonService.voegPokemonToe();
   }
 
 }

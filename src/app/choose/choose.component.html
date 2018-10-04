@@ -5,6 +5,7 @@
 </div>
 
 <div id="PokemonSelector">  
+  <p>You may pick one POKéMON:</p>
   <div id="chosenPokemonIcon"></div>
   <input type="radio" name="chosenPokemon" value="charmander" (click)="chooseCharmander()" id="chooseCharmander">
   <label class="pokeballLabel" id="charmanderLabel" for="chooseCharmander"></label>
@@ -13,7 +14,7 @@
   <input type="radio" name="chosenPokemon" value="bulbasaur" (click)="chooseBulbasaur()" id="chooseBulbasaur">
   <label class="pokeballLabel" id="bulbasaurLabel" for="chooseBulbasaur"></label>
   <div id="chosenPokemonText"></div>
-  <input type="button" value="Yes, let's play!" (click)="commitchoice()">
+  <input type="button" value="Yes, let's play!" (click)="commitchoice()" id="commitbutton">
 </div>
 
 <!-- <div id="testCatch">

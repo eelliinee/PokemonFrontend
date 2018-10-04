@@ -50,10 +50,10 @@ export class ChooseComponent implements OnInit {
   displayChosenPokemon(pokemon, type) {
   //  alert("display chosen pokemon "+pokemon+type);
     document.getElementById("chosenPokemonText").innerHTML = "So! You want the "+ type + " POKéMON, "+ pokemon + "?";
+    document.getElementById("commitbutton").style.display="initial";
   }
 
   commitchoice() {
-    alert("commitchoice");
 // add chosen Pokemon to database with owned Pokemon
     this.getPokemonService.voegEerstePokemonToe(this.pokemonNummer);
 

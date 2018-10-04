@@ -99,14 +99,21 @@ export class GetPokemonService {
 
   showAllSpecies(theSpecies){      
     var x : number;          
-    var deDiv = document.getElementById("hints");
-    deDiv.innerHTML = "";
+ //   var deDiv = document.getElementById("hints");
+    var pokedexTable = document.getElementById("pokedexTable");
+  //  deDiv.innerHTML = "";
+    pokedexTable.innerHTML = "<tr><th>#</th><th>POKéMON</th><th>Type</th></tr>";
     for(x = 0 ; x < theSpecies.length ; x++){
         
         var kleur = 'lightblue';
         
-        var printToevoeging = "#" + theSpecies[x].id+ " " + theSpecies[x].species+" <br>";
-        deDiv.innerHTML = deDiv.innerHTML+printToevoeging;
+        // var printToevoeging = "#" + theSpecies[x].id+ " " + theSpecies[x].species+" <br>";
+
+        // deDiv.innerHTML = deDiv.innerHTML+printToevoeging;
+
+        var addPrint = "<tr><td>" + theSpecies[x].id + "</td><td>" + theSpecies[x].species + "</td><td>" + theSpecies[x].type + "</td></tr>";
+        pokedexTable.innerHTML = pokedexTable.innerHTML+addPrint;
+
 
     }
 
