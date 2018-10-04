@@ -19,6 +19,7 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
 import {  NamesService } from './names.service';
+import { GetPokemonService } from './get-pokemon.service';
 import { PokeboxComponent } from './pokebox/pokebox.component';
 import { WildBattleComponent } from './wild-battle/wild-battle.component';
 
@@ -66,7 +67,8 @@ const appRoutes: Routes = [
     )
   ],
   providers: [
-    NamesService
+    NamesService,
+    GetPokemonService
   ],
   bootstrap: [AppComponent]
 })
