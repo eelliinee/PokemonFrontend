@@ -15,6 +15,7 @@ export class WildBattleComponent implements OnInit {
 
   voegPokemonToe() {
     this.getPokemonService.voegPokemonToe();
+    alert("All right! The POKéMON was caught!")
   }
 
 }

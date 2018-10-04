@@ -5,6 +5,8 @@ export class GetPokemonService {
   baseUrl : string = "http://localhost:9090/";
   pokemonUrl : string = "pokemon/";
   pokedexUrl : string = "pokedex/";
+  starterPokemonIndex;
+  allPokedex;
 
   constructor() { }
 
@@ -19,9 +21,9 @@ export class GetPokemonService {
         console.log(xmlhttp.readyState);
         console.log(xmlhttp.responseText);
         if(xmlhttp.readyState == 4){
-            var allPokedex = JSON.parse(xmlhttp.responseText);
-            console.log(allPokedex);
-            this.insertSpecies(allPokedex, level);
+            this.allPokedex = JSON.parse(xmlhttp.responseText);
+            console.log(this.allPokedex);
+            this.insertSpecies(this.allPokedex, level);
         }
     }
     
@@ -37,9 +39,9 @@ export class GetPokemonService {
         console.log(xmlhttp.readyState);
         console.log(xmlhttp.responseText);
         if(xmlhttp.readyState == 4){
-            var allPokedex = JSON.parse(xmlhttp.responseText);
-            console.log(allPokedex);
-            this.insertSpecies(allPokedex, 5);
+            this.allPokedex = JSON.parse(xmlhttp.responseText);
+            console.log(this.allPokedex);
+            this.insertSpecies(this.allPokedex, 5);
         }
     }
     // var nummer = (<HTMLInputElement>document.getElementById("pokemonNummer")).value;
@@ -66,7 +68,7 @@ export class GetPokemonService {
     pokemon.baseSpeed = theSpecies.baseSpeed;
     pokemon.level = level;
     var pokemonString = JSON.stringify(pokemon);
-    this.postData(pokemonString, this.pokemonUrl,this.gastly);               
+    this.postData(pokemonString, this.pokemonUrl,this.gastly);            
   }
 
   postData(postObj, url, callback){
@@ -118,7 +120,7 @@ export class GetPokemonService {
  //   var deDiv = document.getElementById("hints");
     var pokeTable = document.getElementById("pokeTable");
   //  deDiv.innerHTML = "";
-    pokeTable.innerHTML = "<tr><th>#</th><th>POKéMON</th><th>Type</th></tr>";
+    pokeTable.innerHTML = "<tr><th>POKéMON</th><th>Type</th><th>Level</th></tr>";
     for(x = 0 ; x < theSpecies.length ; x++){
         
         var kleur = 'lightblue';
@@ -127,7 +129,7 @@ export class GetPokemonService {
 
         // deDiv.innerHTML = deDiv.innerHTML+printToevoeging;
 
-        var addPrint = "<tr><td>" + theSpecies[x].id + "</td><td>" + theSpecies[x].species + "</td><td>" + theSpecies[x].type + "</td></tr>";
+        var addPrint = "<tr><td>" + theSpecies[x].species + "</td><td>" + theSpecies[x].type + "</td><td>" + theSpecies[x].level + "</td></tr>";
         pokeTable.innerHTML = pokeTable.innerHTML+addPrint;
 
 
