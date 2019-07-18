@@ -1,0 +1,8 @@
+#footerWrapper {
+    position: fixed;
+    bottom: 0;
+}
+
+#footerWrapper p {
+    font-size: 0.5em;
+}

@@ -1,0 +1,53 @@
+#PokemonSelector input[type=radio]{
+    margin:0;
+    padding:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+#charmanderLabel {
+    background-image: url(../../assets/img/pokeball-icon-tiny-red.png);
+}
+
+#bulbasaurLabel {
+    background-image: url(../../assets/img/pokeball-icon-tiny-green.png);
+}
+
+#squirtleLabel {
+    background-image: url(../../assets/img/pokeball-icon-tiny-blue.png);
+}
+
+#PokemonSelector input[type=radio]:active +.pokeballLabel{
+    opacity: .9;
+}
+
+#PokemonSelector input[type=radio]:checked +.pokeballLabel{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+.pokeballLabel{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width: 32px;
+    height: 32px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.pokeballLabel:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+#commitbutton {
+    display: none;
+}

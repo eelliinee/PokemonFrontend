@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'pkmn';
+    src: url('assets/fonts/pkmn_rbygsc-webfont.woff2') format('woff2'),
+         url('assets/fonts/pkmn_rbygsc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: "pkmn", monospace;
+}
+
+#routerWrapper {
+    margin-bottom: 50px;
+}
+
+#footerWrapper {
+    height: 25px;
+    width: 100%;
+    background-color: white;
+}
+
+/* body {
+    border: 5px solid grey;
+}
+
+#wrapper {
+    border: 5px solid blue;
+    display: inline-block;
+    width: 500px;
+    margin: auto;
+}
+
+#routerWrapper {
+    border: 5px solid red;
+} */

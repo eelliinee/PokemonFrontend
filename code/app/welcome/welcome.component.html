@@ -1,9 +1,12 @@
 <h1>Hello there!</h1>
 <p>Welcome to the world of POKéMON!</p>
-<form>
-  First, what is your name? <br>
-  <input type="text" value="Ash" id="playerName"> <br>
-  What is your rival's name? <br>
-  <input type="text" value="Gary" id="rivalName"> <br>
+
+
+ <p>First, what is your name?</p>
+
+  <!-- <input type="text" value="Ash" id="playerName"> <br> -->
+   <input type="text" [(ngModel)]="playerName">
+<p> What is your rival's name?</p>
+ <!-- <input type="text" value="Gary" id="rivalName"> <br> -->
+  <input type="text" [(ngModel)]="rivalName"> <br>
   <input type="button" value="start game" (click)="startGame()">
-</form>

@@ -1,0 +1,39 @@
+#pokecenter {
+    border: 1px solid grey;
+    width: 446px;
+    height: 252px;
+    background-image: url(../../assets/img/pokecenterbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+#backToTownIcon, #healPokemonIcon, #pokedexIcon, #pokeboxIcon {
+    display: block;
+    position: absolute;
+}
+
+#backToTownIcon {
+    left: 94px;
+    top: 222px;
+}
+
+#healPokemonIcon {
+    left: 104px;
+    top: 30px;
+}
+
+#healPokemonIcon:hover {
+    cursor: pointer;
+}
+
+#pokedexIcon {
+    left: 190px;
+    top: 95px;
+}
+
+#pokeboxIcon {
+    left: 414px;
+    top: 94px;
+}
